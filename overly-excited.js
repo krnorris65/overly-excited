@@ -1,5 +1,7 @@
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
+let secondSentence =["The", "Spider", "was", "squashed", "by", "the", "thing", "next", "to", "my", "hand", "when", "I", "saw", "it"];
+
 
 addExcitement = (theWordArray) => {
     let phrase = "";
@@ -10,28 +12,29 @@ addExcitement = (theWordArray) => {
 }
 
 
-function veryExcited (theWordArray, char) {
+function veryExcited (theWordArray, character) {
     let phrase = "";
     for(i = 0; i < theWordArray.length; i++) {
         phrase += " " + theWordArray[i];
         if(i%3 === 2) {
-            phrase += char;
+            phrase += character;
         }
         console.log(phrase);
     }
 }
 
-function evenMoreExcited (theWordArray, char) {
+function evenMoreExcited (theWordArray, character) {
     let phrase = "";
-    let numOfChar = char;
+    let numberOfCharacters = character;
     for(i = 0; i < theWordArray.length; i++) {
         phrase += " " + theWordArray[i];
         if(i%3 === 2) {
-            phrase += numOfChar;
-            numOfChar += char;
+            phrase += numberOfCharacters;
+            numberOfCharacters += character;
         }
         console.log(phrase);
     }
 }
 
 evenMoreExcited(sentence, "?");
+evenMoreExcited(secondSentence, "&");
