@@ -34,4 +34,4 @@ function evenMoreExcited (theWordArray, char) {
     }
 }
 
-addExcitement(sentence, "?");
+evenMoreExcited(sentence, "?");
